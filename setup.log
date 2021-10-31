@@ -1,0 +1,51 @@
+[2021-10-17 13:05:35] Executing bootstrap tasks
+[2021-10-17 13:05:35] OpenJDK Runtime Environment 16.0.2+7-67
+[2021-10-17 13:05:35] Product org.eclipse.products.epp.package.java.2021-09
+[2021-10-17 13:05:35] Bundle org.eclipse.oomph.setup 1.21.0.v20210808-1248, build=5169, branch=4f2d83d895798b31dc987dc9c07da7c94b536f1d
+[2021-10-17 13:05:35] Bundle org.eclipse.oomph.setup.core 1.21.0.v20210828-0732, build=5169, branch=4f2d83d895798b31dc987dc9c07da7c94b536f1d
+[2021-10-17 13:05:35] Bundle org.eclipse.oomph.setup.p2 1.17.0.v20210601-0619, build=5169, branch=4f2d83d895798b31dc987dc9c07da7c94b536f1d
+[2021-10-17 13:05:35] Performing P2 Director (Eclipse IDE for Java Developers (2021-09) + JRE 16.0.2)
+[2021-10-17 13:05:35] Offline = false
+[2021-10-17 13:05:35] Mirrors = true
+[2021-10-17 13:05:35] Resolving 18 requirements from 4 repositoriesto C:\Users\user\java-2021-09\eclipse
+[2021-10-17 13:05:35] Requirement org.eclipse.equinox.p2.iu:org.eclipse.justj.openjdk.hotspot.jre.full.feature.group (filter=(|(&(osgi.arch=aarch64)(osgi.os=linux))(&(osgi.arch=x86_64)(osgi.os=linux))(&(osgi.arch=x86_64)(osgi.os=macosx))(&(osgi.arch=x86_64)(osgi.os=win32))))
+[2021-10-17 13:05:35] Requirement org.eclipse.equinox.p2.iu:epp.package.java [4.21.0,5.0.0)
+[2021-10-17 13:05:35] Requirement org.eclipse.equinox.p2.iu:org.eclipse.platform.feature.group [4.21.0,5.0.0)
+[2021-10-17 13:05:35] Requirement org.eclipse.equinox.p2.iu:org.eclipse.rcp.feature.group [4.21.0,5.0.0)
+[2021-10-17 13:05:35] Requirement org.eclipse.equinox.p2.iu:org.eclipse.buildship.feature.group
+[2021-10-17 13:05:35] Requirement org.eclipse.equinox.p2.iu:org.eclipse.eclemma.feature.feature.group
+[2021-10-17 13:05:35] Requirement org.eclipse.equinox.p2.iu:org.eclipse.egit.feature.group
+[2021-10-17 13:05:35] Requirement org.eclipse.equinox.p2.iu:org.eclipse.epp.mpc.feature.group
+[2021-10-17 13:05:35] Requirement org.eclipse.equinox.p2.iu:org.eclipse.jdt.feature.group
+[2021-10-17 13:05:35] Requirement org.eclipse.equinox.p2.iu:org.eclipse.jgit.feature.group
+[2021-10-17 13:05:35] Requirement org.eclipse.equinox.p2.iu:org.eclipse.m2e.feature.feature.group
+[2021-10-17 13:05:35] Requirement org.eclipse.equinox.p2.iu:org.eclipse.m2e.lemminx.feature.feature.group
+[2021-10-17 13:05:35] Requirement org.eclipse.equinox.p2.iu:org.eclipse.m2e.logback.feature.feature.group
+[2021-10-17 13:05:35] Requirement org.eclipse.equinox.p2.iu:org.eclipse.mylyn.wikitext.editors_feature.feature.group
+[2021-10-17 13:05:35] Requirement org.eclipse.equinox.p2.iu:org.eclipse.tips.feature.feature.group
+[2021-10-17 13:05:35] Requirement org.eclipse.equinox.p2.iu:org.eclipse.tm.terminal.feature.feature.group
+[2021-10-17 13:05:35] Requirement org.eclipse.equinox.p2.iu:org.eclipse.wildwebdeveloper.xml.feature.feature.group
+[2021-10-17 13:05:35] Requirement org.eclipse.equinox.p2.iu:org.eclipse.oomph.setup.feature.group
+[2021-10-17 13:05:35] Repository https://download.eclipse.org/justj/jres/16/updates/release/16.0.2
+[2021-10-17 13:05:35] Repository https://download.eclipse.org/technology/epp/packages/2021-09/202109101200
+[2021-10-17 13:05:35] Repository https://download.eclipse.org/releases/2021-09/202109151000
+[2021-10-17 13:05:35] Repository http://download.eclipse.org/oomph/updates/milestone/latest
+[2021-10-17 13:05:40] ERROR: org.eclipse.equinox.p2.metadata.repository code=1002 Unable to read repository at https://download.eclipse.org/technology/epp/packages/2021-09/202109101200.
+java.io.IOException: https://download.eclipse.org/technology/epp/packages/2021-09/202109101200 is not a valid repository location.
+  at org.eclipse.equinox.internal.p2.metadata.repository.SimpleMetadataRepositoryFactory.load(SimpleMetadataRepositoryFactory.java:103)
+  at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:63)
+  at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:787)
+  at jdk.internal.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+  at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+  at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+  at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:119)
+  at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:447)
+  at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:230)
+  at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:519)
+  at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:110)
+  at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:105)
+  at org.eclipse.oomph.p2.internal.core.ProfileTransactionImpl$RepositoryLoader$Worker.perform(ProfileTransactionImpl.java:1591)
+  at org.eclipse.oomph.util.WorkerPool$Worker.run(WorkerPool.java:434)
+  at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+[2021-10-17 13:05:40] 
